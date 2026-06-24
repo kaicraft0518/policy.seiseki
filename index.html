@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>免責事項 | 成績管理</title>
+<link rel="icon" type="image/png" href="https://apps.seiseki.f5.si/icon.png">
+<style>
+:root{
+  --bg:#f7f6f3;--surface:#fff;--border:rgba(0,0,0,0.08);
+  --text:#1a1a1a;--text2:#555;--text3:#999;
+  --accent:#4a3fd4;--radius:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Hiragino Sans','Yu Gothic',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.8;min-height:100vh}
+
+header{background:var(--surface);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;align-items:center;gap:14px}
+header img{width:36px;height:36px;border-radius:8px}
+header a{text-decoration:none;color:var(--text)}
+.header-title{font-size:16px;font-weight:700}
+.header-sub{font-size:12px;color:var(--text3)}
+
+main{max-width:720px;margin:40px auto;padding:0 20px 80px}
+
+.page-title{font-size:24px;font-weight:700;margin-bottom:6px}
+.page-date{font-size:12px;color:var(--text3);margin-bottom:36px}
+
+section{margin-bottom:36px}
+h2{font-size:16px;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:10px;margin-bottom:12px}
+p{color:var(--text2);margin-bottom:10px}
+ul{color:var(--text2);padding-left:1.4em;margin-bottom:10px}
+ul li{margin-bottom:6px}
+
+.note-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;margin-top:10px}
+.note-box p{margin-bottom:0;font-size:13px;color:var(--text3)}
+
+footer{text-align:center;padding:24px;font-size:12px;color:var(--text3);border-top:1px solid var(--border)}
+footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="https://apps.seiseki.f5.si/icon.png" alt="成績管理アイコン">
+  <div>
+    <a href="https://apps.seiseki.f5.si/">
+      <div class="header-title">成績管理</div>
+      <div class="header-sub">apps.seiseki.f5.si</div>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="page-title">免責事項・プライバシーポリシー</div>
+  <div class="page-date">最終更新日：2025年6月</div>
+
+  <section>
+    <h2>1. サービス概要</h2>
+    <p>本サービス「成績管理」（以下、本サービス）は、定期考査・模試の成績を記録・管理することを目的とした個人製作のWebアプリケーションです。</p>
+    <p>本サービスは <a href="https://apps.seiseki.f5.si/">apps.seiseki.f5.si</a> にて公開されており、Googleアカウントによるログインを通じてデータのクラウド保存を行います。</p>
+  </section>
+
+  <section>
+    <h2>2. 免責事項</h2>
+    <p>本サービスの利用にあたり、以下の点をご了承ください。</p>
+    <ul>
+      <li>本サービスは個人が学習目的で製作したものであり、完全性・正確性・安全性を保証するものではありません。</li>
+      <li>本サービスの利用によって生じたいかなる損害（データの消失・漏洩・サービスの停止等）についても、製作者は一切の責任を負いません。</li>
+      <li>成績の評定計算は簡易的な独自計算式によるものであり、実際の学校の評定とは異なる場合があります。</li>
+      <li>本サービスは予告なく機能の変更・追加・停止・終了する場合があります。</li>
+      <li>Firebase（Google LLC）のサービス障害等、第三者のサービスに起因する問題については責任を負いかねます。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. 収集する情報</h2>
+    <p>本サービスでは、以下の情報を収集・保存します。</p>
+    <ul>
+      <li><strong>Googleアカウント情報：</strong>ログイン時にGoogle認証を通じて、表示名・メールアドレス・プロフィール画像URLを取得します。</li>
+      <li><strong>成績データ：</strong>ユーザーが入力した定期考査・模試の点数・評定・その他記録情報をFirebase Realtime Databaseに保存します。</li>
+    </ul>
+    <div class="note-box">
+      <p>収集した情報は本サービスの機能提供のみに使用し、第三者への提供・販売は行いません。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. データの保管</h2>
+    <p>入力されたデータはGoogle Firebase Realtime Databaseに保存されます。データはGoogleのサーバー上に保管されるため、Googleのプライバシーポリシーおよび利用規約が適用されます。</p>
+    <ul>
+      <li>データはGoogleアカウントごとに分離して管理されます。</li>
+      <li>他のユーザーがあなたのデータにアクセスすることはできません。</li>
+      <li>サービスの終了等によりデータが削除される場合があります。重要なデータは定期的にお手元に控えることを推奨します。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. 利用対象</h2>
+    <p>本サービスは製作者本人および関係者の個人利用を主な目的として公開しています。第三者による利用を制限するものではありませんが、商用利用はご遠慮ください。</p>
+  </section>
+
+  <section>
+    <h2>6. 外部サービス</h2>
+    <p>本サービスは以下の外部サービスを使用しています。</p>
+    <ul>
+      <li><strong>Firebase（Google LLC）：</strong>認証・データベース機能の提供</li>
+      <li><strong>Chart.js：</strong>グラフ描画ライブラリ（MIT License）</li>
+    </ul>
+    <p>各サービスの利用規約・プライバシーポリシーについては、各社のウェブサイトをご確認ください。</p>
+  </section>
+
+  <section>
+    <h2>7. お問い合わせ</h2>
+    <p>本サービスに関するご質問・ご意見は、GitHubリポジトリのIssueよりお寄せください。</p>
+    <p><a href="https://github.com/kaicraft0518/seiseki">github.com/kaicraft0518/seiseki</a></p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 kaicraft0518 &nbsp;|&nbsp;
+  <a href="https://apps.seiseki.f5.si/">成績管理アプリへ</a>
+</footer>
+
+</body>
+</html>
